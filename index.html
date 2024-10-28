@@ -10,16 +10,30 @@
     <div class="container">
       <div class="left-container">
         <h1>Student Book</h1>
-        <input type="text" id="name" placeholder="Student Name" required />
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Student Name"
+          required
+        />
         <input type="text" id="branch" placeholder="Branch" required />
-        <input type="text" id="rollNum" placeholder="Roll Number" required />
+        <input type="number" id="rollNum" placeholder="Roll Number" required />
         <input type="text" id="grade" placeholder="Grade" required />
-        <input type="text" id="cgpa" placeholder="Cgpa" required />
+        <input type="number" id="cgpa" placeholder="Cgpa" required />
         <button type="button" onclick="addStudent()">Add Student</button>
       </div>
       <div class="right-container">
         <h3>Student List</h3>
-        <ul id="studentList"></ul>
+        <div class="card-container">
+          <div class="card">
+            <span class="date-time">date and time</span>
+            <h3 class="student-name">student name</h3>
+            <p class="branch">brach</p>
+            <p class="rollNum">roll number</p>
+            <p class="grade">grade</p>
+            <p class="cgpa">cgpa</p>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
