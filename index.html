@@ -8,15 +8,19 @@
   </head>
   <body>
     <div class="container">
-      <h1>Student Book</h1>
-      <input type="text" id="name" placeholder="Student Name" required />
-      <input type="text" id="branch" placeholder="Branch" required />
-      <input type="text" id="rollNum" placeholder="Roll Number" required />
-      <input type="text" id="grade" placeholder="Grade" required />
-      <input type="text" id="cgpa" placeholder="Cgpa" required />
-      <button type="button" onclick="addStudent()">Add Student</button>
-      <h2>Student List</h2>
-      <ul id="studentList"></ul>
+      <div class="left-container">
+        <h1>Student Book</h1>
+        <input type="text" id="name" placeholder="Student Name" required />
+        <input type="text" id="branch" placeholder="Branch" required />
+        <input type="text" id="rollNum" placeholder="Roll Number" required />
+        <input type="text" id="grade" placeholder="Grade" required />
+        <input type="text" id="cgpa" placeholder="Cgpa" required />
+        <button type="button" onclick="addStudent()">Add Student</button>
+      </div>
+      <div class="right-container">
+        <h3>Student List</h3>
+        <ul id="studentList"></ul>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
